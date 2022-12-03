@@ -1,5 +1,5 @@
 # ChatGPT
-[ChatGPT](2022-12-03-samples-text-davinci-002-render.jsonl) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
+[ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
 ## Performance
 We have evaluated the ChatGPT model `text-davinci-002-render` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `56.10%`.
