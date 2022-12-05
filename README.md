@@ -3,8 +3,7 @@
 
 ## Analysis
 When a user types in the word `hello`, a POST request is sent to the endpoint `https://chat.openai.com/backend-api/conversation`.
-
-Der Post-Request
+They payload of the Post-Request looks like this:
 ``` Json
 {
     "action": "next",
@@ -25,7 +24,7 @@ Der Post-Request
 }
 ```
 
-Based on this message the prompt is generated in the backend. The prompt could look like this:
+Based on the message above the prompt is generated in the backend. The prompt could look like this:
 ``` markdown
 [System]
 quality: high
