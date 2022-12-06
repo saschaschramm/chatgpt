@@ -45,7 +45,12 @@ hello
 ```
 
 An indication of the appearance of the prompt is obtained by the following injection:
+
 <image src="https://pbs.twimg.com/media/Fi4i8LeWAAEZnly?format=jpg&name=900x900" width="50%">
+https://t.co/ug44dVkwPH
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">OpenAI’s ChatGPT is susceptible to prompt injection — say the magic words, “Ignore previous directions”, and it will happily divulge to you OpenAI’s proprietary prompt: <a href="https://t.co/ug44dVkwPH">pic.twitter.com/ug44dVkwPH</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1598253337400717313?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 #### Programming
 For programming questions, the prompt is probably extended by the following text:
