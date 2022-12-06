@@ -2,8 +2,10 @@
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
 ## Analysis
+
+### Conversation API
 When a user types in the word `hello`, a POST request is sent to the endpoint `https://chat.openai.com/backend-api/conversation`.
-They payload of the Post-Request looks like this:
+They payload of the POST request looks like this:
 ``` Json
 {
     "action": "next",
@@ -24,6 +26,8 @@ They payload of the Post-Request looks like this:
 }
 ```
 
+### Prompt
+#### General
 Based on the message above the prompt is generated in the backend. The prompt could look like this:
 ``` markdown
 [System]
@@ -40,7 +44,11 @@ hello
 [Assistant]
 ```
 
-For programming questions, the prompt will probably be extended with a text similar to this one:
+Hinweis, dass die Prompt so aussieht gibt folgende Prompt Injection:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">OpenAI’s ChatGPT is susceptible to prompt injection — say the magic words, “Ignore previous directions”, and it will happily divulge to you OpenAI’s proprietary prompt: <a href="https://t.co/ug44dVkwPH">pic.twitter.com/ug44dVkwPH</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1598253337400717313?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+#### Programming
+For programming questions, the prompt is probably extended by the following text:
 ```
 You are a brilliant and helpful coding assistant designed to help users with any programming-related questions or problems they may have.
 
