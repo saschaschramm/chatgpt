@@ -1,9 +1,9 @@
 # ChatGPT
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
-> Update 2023-03-01: We have evaluated the official ChatGPT API
+> Update 2023-03-01: We've evaluated the model `gpt-3.5-turbo-0301` used by the  ChatGPT API
 
-## Analysis
+## Analysis chat.openai.com
 
 ### Conversation API
 When a user types in the word `hello`, a POST request is sent to the endpoint `https://chat.openai.com/backend-api/conversation`.
