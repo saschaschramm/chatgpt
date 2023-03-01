@@ -1,6 +1,8 @@
 # ChatGPT
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
+> Update 2023-03-01: We have evaluated the official ChatGPT API
+
 ## Analysis
 
 ### Conversation API
@@ -75,13 +77,13 @@ Two datasets were used to train the reward model:
 ## Performance
 We have evaluated the ChatGPT model `text-davinci-002-render-sha` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `70.12%`.
 
-| Model name | Pass@1 | Date | Comment
-| - | - | - | - |
+| Model name | Pass@1 | Date | Comment | Completions of evaluation run
+| - | - | - | - | - |
 | code-cushman-001 | 32.93% | 2022-10-23 | https://openai.com/api/
 | code-davinci-002 | 46.95% | 2022-10-23 | https://openai.com/api/
 | cushman-ml | 56.10% | 2022-10-23 | Copilot
 | text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
-| text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ | 
+| text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [2023-02-19-samples-text-davinci-002-render-sha.jsonl](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
+| gpt-3.5-turbo-0301 | 72.56% | 2023-03-01 | https://openai.com/api/ | [2023-03-01-samples-gpt-3.5-turbo-0301.jsonl](2023-03-01-samples-gpt-3.5-turbo-0301.jsonl)
 
 
-Completions of the evaluation run: [2022-12-03-samples-text-davinci-002-render-sha.jsonl](2022-12-03-samples-text-davinci-002-render-sha.jsonl)
