@@ -3,10 +3,11 @@
 
 ## Analysis of the ChatGPT API
 ChatGPT can used 2 different models:
-GPT-3.5 and GPT-4.
+* gpt-3.5-turbo
+* gpt-4
 
-### GPT-3.5
-The ChatGPT model is different from previous models. ChatGPT uses a new vocabulary with 100.000 tokens and a [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
+### gpt-3.5-turbo
+The model `gpt-3.5-turbo` is different from previous models. The model uses a new vocabulary with 100.000 tokens and the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
 
 If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 
@@ -45,8 +46,8 @@ completion_tokens = ['\n\n', '50']
 # len(tokens) is 2
 ```
 
-## GPT-4
-GPT-4 seems to use a different vocabulary than GPT-3.5. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
+## gpt-4
+`gpt-4` seems to use a different vocabulary than `gpt-3.5-turbo`. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 ```json
 {
   "choices": [
@@ -76,11 +77,10 @@ We have evaluated the ChatGPT model `text-davinci-002-render-sha` with the [Huma
 
 | Model name | Pass@1 | Date | Comment | Completions of evaluation run
 | - | - | - | - | - |
-| code-cushman-001 | 32.93% | 2022-10-23 | https://openai.com/api/
-| code-davinci-002 | 46.95% | 2022-10-23 | https://openai.com/api/
-| cushman-ml | 56.10% | 2022-10-23 | Copilot
-| text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
-| text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [2023-02-19-samples-text-davinci-002-render-sha.jsonl](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
+| gpt-4-0314 | 78.66% | 2023-03-17 | https://openai.com/api/ | [2023-03-17-samples-gpt-4-0314.jsonl](2023-03-17-samples-gpt-4-0314.jsonl)
 | gpt-3.5-turbo-0301 | 72.56% | 2023-03-01 | https://openai.com/api/ | [2023-03-01-samples-gpt-3.5-turbo-0301.jsonl](2023-03-01-samples-gpt-3.5-turbo-0301.jsonl)
-
-
+| text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [2023-02-19-samples-text-davinci-002-render-sha.jsonl](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
+| text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
+| cushman-ml | 56.10% | 2022-10-23 | Copilot
+| code-davinci-002 | 46.95% | 2022-10-23 | https://openai.com/api/
+| code-cushman-001 | 32.93% | 2022-10-23 | https://openai.com/api/
