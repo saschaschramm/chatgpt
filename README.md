@@ -73,7 +73,7 @@ completion_tokens = ['\n\n', '50']
 ```
 
 ## Performance
-We have evaluated the ChatGPT model `text-davinci-002-render-sha` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `70.12%`.
+We have evaluated the ChatGPT model `gpt-4-0314` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `78.66%`.
 
 | Model name | Pass@1 | Date | Comment | Completions of evaluation run
 | - | - | - | - | - |
