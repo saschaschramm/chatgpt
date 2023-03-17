@@ -8,7 +8,7 @@ GPT-3.5 and GPT-4.
 ### GPT-3.5
 The ChatGPT model is different from previous models. ChatGPT uses a new vocabulary with 100.000 tokens and a [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
 
-If we send the following message `[{"role": "user", "content": "13+37="}]`, we get the following chat completion response:
+If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 
 ```json
 {
@@ -46,7 +46,7 @@ completion_tokens = ['\n\n', '50']
 ```
 
 ## GPT-4
-GPT-4 seems to use a different vocabulary than GPT-3.5. If we send the following message `[{"role": "user", "content": "13+37="}]`, we get the following chat completion response:
+GPT-4 seems to use a different vocabulary than GPT-3.5. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 ```json
 {
   "choices": [
