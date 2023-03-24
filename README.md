@@ -23,7 +23,7 @@ If we send the message `[{"role": "user", "content": "13+37="}]` to the model, w
       }
     }
   ],
-  "created": 1679675118,
+  "created": 123,
   "id": "chatcmpl-XXX",
   "model": "gpt-3.5-turbo-0301",
   "object": "chat.completion",
