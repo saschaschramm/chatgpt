@@ -2,52 +2,15 @@
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
 ## Analysis of the ChatGPT API
-ChatGPT can used 2 different models:
+ChatGPT can be used with 2 different models:
 * gpt-3.5-turbo
 * gpt-4
 
 ### gpt-3.5-turbo
-The model `gpt-3.5-turbo` is different from previous models. The model uses a new vocabulary with 100.000 tokens and the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
+The model `gpt-3.5-turbo` is different from previous models. The model uses a new vocabulary `cl100k_base` with 100.000 tokens and the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
 
 If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 
-```json
-{
-  "choices": [
-    {
-      "finish_reason": "stop",
-      "index": 0,
-      "message": {
-        "content": "\n\n50",
-        "role": "assistant"
-      }
-    }
-  ],
-  "created": 1679066912,
-  "id": "chatcmpl-XXX",
-  "model": "gpt-3.5-turbo-0301",
-  "object": "chat.completion",
-  "usage": {
-    "completion_tokens": 2,
-    "prompt_tokens": 11,
-    "total_tokens": 13
-  }
-}
-```
-
-The number of prompt tokens and completion tokens are computed as follows:
-```python
-prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant']
-# len(tokens) is 11
-```
-
-```python
-completion_tokens = ['\n\n', '50']
-# len(tokens) is 2
-```
-
-## gpt-4
-`gpt-4` seems to use a different vocabulary than `gpt-3.5-turbo`. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 ```json
 {
   "choices": [
@@ -60,13 +23,53 @@ completion_tokens = ['\n\n', '50']
       }
     }
   ],
-  "created": XXX,
+  "created": 1679675118,
+  "id": "chatcmpl-XXX",
+  "model": "gpt-3.5-turbo-0301",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 12,
+    "total_tokens": 13
+  }
+}
+```
+
+The number of prompt tokens and completion tokens are computed as follows:
+```python
+prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant']
+# len(tokens) is 11
+```
+
+> It's unclear why the model returns 12 prompt tokens instead of 11. Maybe a newline is added after the word `assistant`?
+
+
+```python
+completion_tokens = ['50']
+# len(tokens) is 1
+```
+
+## gpt-4
+The `gpt-4` model also uses the new vocabulary `cl100k_base` but it returns a different number of prompt tokens compared to `gpt-3.5-turbo`. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, it returns the following chat completion response:
+```json
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "50",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 123,
   "id": "chatcmpl-XXX",
   "model": "gpt-4-0314",
   "object": "chat.completion",
   "usage": {
-    "completion_tokens": 2,
-    "prompt_tokens": 10,
+    "completion_tokens": 1,
+    "prompt_tokens": 11,
     "total_tokens": 12
   }
 }
