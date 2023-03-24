@@ -41,7 +41,7 @@ prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>
 # len(tokens) is 11
 ```
 
-> It's unclear why the model returns 12 prompt tokens instead of 11. Maybe a newline is added after the word `assistant`?
+> It's unclear why the model returns 12 prompt tokens instead of 11. Maybe a newline is added after the word `assistant`.
 
 
 ```python
