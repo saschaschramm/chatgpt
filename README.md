@@ -81,7 +81,7 @@ We have evaluated the ChatGPT model `gpt-4-0314` with the [HumanEval](https://gi
 | Model name | Pass@1 | Date | Comment | Completions of evaluation run | Prompt
 | - | - | - | - | - | - |
 | gpt-4-0314 | 78.66% | 2023-03-17 | https://openai.com/api/ | [2023-03-17-samples-gpt-4-0314.jsonl](2023-03-17-samples-gpt-4-0314.jsonl) | Complete the following code:\n{code}
-| gpt-3.5-turbo-0301 | 72.56% | 2023-03-01 | https://openai.com/api/ | |[2023-03-01-samples-gpt-3.5-turbo-0301.jsonl](2023-03-01-samples-gpt-3.5-turbo-0301.jsonl)
+| gpt-3.5-turbo-0301 | 72.56% | 2023-03-01 | https://openai.com/api/ | [2023-03-01-samples-gpt-3.5-turbo-0301.jsonl](2023-03-01-samples-gpt-3.5-turbo-0301.jsonl)
 | text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [2023-02-19-samples-text-davinci-002-render-sha.jsonl](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
 | text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
 | cushman-ml | 56.10% | 2022-10-23 | Copilot
