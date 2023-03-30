@@ -74,13 +74,32 @@ The `gpt-4` model also uses the new vocabulary `cl100k_base` but it returns a di
   }
 }
 ```
+## Fill in the middle
+
+gpt-4 probably is being trained using [Fill in the middle]().
+
+
+ENDOFTEXT = "<|endoftext|>"
+FIM_PREFIX = "<|fim_prefix|>"
+FIM_MIDDLE = "<|fim_middle|>"
+FIM_SUFFIX = "<|fim_suffix|>"
+ENDOFPROMPT = "<|endofprompt|>"
+
+
+    special_tokens = {
+        ENDOFTEXT: 100257,
+        FIM_PREFIX: 100258,
+        FIM_MIDDLE: 100259,
+        FIM_SUFFIX: 100260,
+        ENDOFPROMPT: 100276,
+    }
 
 ## Performance
 We have evaluated the ChatGPT model `gpt-4-0314` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `78.66%`.
 
-| Model name | Pass@1 | Date | Comment | Completions of evaluation run
-| - | - | - | - | - |
-| gpt-4-0314 | 78.66% | 2023-03-17 | https://openai.com/api/ | [2023-03-17-samples-gpt-4-0314.jsonl](2023-03-17-samples-gpt-4-0314.jsonl)
+| Model name | Pass@1 | Date | Comment | Completions of evaluation run | Prompt
+| - | - | - | - | - | - |
+| gpt-4-0314 | 78.66% | 2023-03-17 | https://openai.com/api/ | [2023-03-17-samples-gpt-4-0314.jsonl](2023-03-17-samples-gpt-4-0314.jsonl) | Complete the following code:\n{code}
 | gpt-3.5-turbo-0301 | 72.56% | 2023-03-01 | https://openai.com/api/ | [2023-03-01-samples-gpt-3.5-turbo-0301.jsonl](2023-03-01-samples-gpt-3.5-turbo-0301.jsonl)
 | text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [2023-02-19-samples-text-davinci-002-render-sha.jsonl](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
 | text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
