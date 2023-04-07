@@ -1,7 +1,7 @@
 # ChatGPT
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
-## Analysis of the ChatGPT API
+## Analysis
 
 ### Models available via chat.openai.com
 | Title | Slug | Max tokens | Description |
