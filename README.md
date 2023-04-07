@@ -2,9 +2,22 @@
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
 ## Analysis of the ChatGPT API
-ChatGPT can be used with 2 different models:
-* gpt-3.5-turbo
-* gpt-4
+
+### Models available via chat.openai.com
+| Title | Slug | Max tokens | Description |
+| --- | --- | --- | --- |
+| Plugins | text-davinci-002-plugins | 8195 | An experimental model that knows when and how to use plugins |
+| Default (GPT-3.5) | text-davinci-002-render-sha | 4097 | Optimized for speed, currently available to Plus users |
+| Legacy (GPT-3.5) | text-davinci-002-render-paid | 4097 | The previous ChatGPT Plus model |
+| GPT-4 | gpt-4 | 4095 | Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. |
+
+### Models available via platform.openai.com
+| Model | Max tokens | Training data (pre-training) |
+| --- | --- | --- |
+| gpt-4-0314 | 8192 | Up to Sep 2021
+| gpt-4-32k-0314 | 32768 | Up to Sep 2021
+| gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
+
 
 ### gpt-3.5-turbo
 The model `gpt-3.5-turbo` is different from previous models. The model uses a new vocabulary `cl100k_base` with 100.000 tokens and the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
