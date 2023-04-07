@@ -2,7 +2,6 @@
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
 ## Analysis
-
 ### Models available via chat.openai.com
 | Title | Slug | Max tokens | Description |
 | --- | --- | --- | --- |
@@ -17,7 +16,6 @@
 | gpt-4-0314 | 8192 | Up to Sep 2021
 | gpt-4-32k-0314 | 32768 | Up to Sep 2021
 | gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
-
 
 ### gpt-3.5-turbo
 The model `gpt-3.5-turbo` is different from previous models. The model uses a new vocabulary `cl100k_base` with 100.000 tokens and the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
