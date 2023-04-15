@@ -48,12 +48,9 @@ If we send the message `[{"role": "user", "content": "13+37="}]` to the model, w
 
 The number of prompt tokens and completion tokens are computed as follows:
 ```python
-prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant']
-# len(tokens) is 11
+prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant',  '<|message|>']
+# len(tokens) is 12
 ```
-
-> It's unclear why the model returns 12 prompt tokens instead of 11. Maybe a newline is added after the word `assistant`.
-
 
 ```python
 completion_tokens = ['50']
@@ -84,8 +81,10 @@ The `gpt-4` model also uses the new vocabulary `cl100k_base` but it returns a di
     "total_tokens": 12
   }
 }
-
 ```
+
+> It's unclear why the model returns 11 prompt tokens instead of 12. Maybe there is no `\n` after the role `user`.
+
 ## Performance
 We have evaluated the ChatGPT model `gpt-4-0314` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `78.66%`.
 
