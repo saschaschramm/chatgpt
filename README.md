@@ -17,9 +17,12 @@
 | gpt-4-32k-0314 | 32768 | Up to Sep 2021
 | gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
 
-### gpt-3.5-turbo
-The model `gpt-3.5-turbo` is different from previous models. The model uses a new vocabulary `cl100k_base` with 100.000 tokens and the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
+### Vocabulary
+The ChatGPT models use a unique `cl100k_base` vocabulary with 100,000 tokens, where each token encodes an average of 3.7 characters in English. For a detailed analysis, see [vocab.ipynb](vocab.ipynb). 
 
+Additionally, these models employ the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
+
+### gpt-3.5-turbo
 If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
 
 ```json
@@ -58,7 +61,7 @@ completion_tokens = ['50']
 ```
 
 ## gpt-4
-The `gpt-4` model also uses the new vocabulary `cl100k_base` but it returns a different number of prompt tokens compared to `gpt-3.5-turbo`. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, it returns the following chat completion response:
+The `gpt-4` model returns a different number of prompt tokens compared to `gpt-3.5-turbo`. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, it returns the following chat completion response:
 ```json
 {
   "choices": [
