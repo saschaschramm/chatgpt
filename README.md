@@ -18,7 +18,7 @@
 | gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
 
 ### Vocabulary
-The ChatGPT models use a unique `cl100k_base` vocabulary with 100,000 tokens, where each token encodes an average of 3.7 characters in English. For a detailed analysis, see [vocab.ipynb](vocab.ipynb). 
+The ChatGPT models employ a distinct vocabulary compared to their predecessors. The models use a unique `cl100k_base` vocabulary with 100,000 tokens, where each token encodes an average of 3.7 characters in English. For a detailed analysis, see [vocab.ipynb](vocab.ipynb). 
 
 Additionally, these models employ the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
 
