@@ -49,7 +49,7 @@ If we send the message `[{"role": "user", "content": "13+37="}]` to the model, w
 }
 ```
 
-The number of prompt tokens and completion tokens are computed as follows:
+The number of prompt tokens and completion tokens are computed as follows (see [OpenAI-Cookbook](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb) for details):
 ```python
 prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant',  '<|message|>']
 # len(tokens) is 12
