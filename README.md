@@ -3,10 +3,10 @@
 
 ## Analysis
 ### Models available via chat.openai.com
-| Title | Slug | Max tokens | Description |
+| Title | Slug | Max tokens | Description (from OpenAI) |
 | --- | --- | --- | --- |
 | Plugins | text-davinci-002-plugins | 8195 | An experimental model that knows when and how to use plugins |
-| Default (GPT-3.5) | text-davinci-002-render-sha | 4097 | Optimized for speed, currently available to Plus users |
+| Default (GPT-3.5) | text-davinci-002-render-sha | 4097 | Optimized for speed, currently available to Plus users <br><br> Note: The original description is outdated, as the model is now accessible to both Plus and non-Plus users. |
 | Legacy (GPT-3.5) | text-davinci-002-render-paid | 4097 | The previous ChatGPT Plus model |
 | GPT-4 | gpt-4 | 4095 | Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. |
 
