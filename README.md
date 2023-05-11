@@ -10,6 +10,7 @@
 | Legacy (GPT-3.5) [Deprecating Soon] | text-davinci-002-render-paid | 4097 | This is the previous Plus model. It will be deprecated on May 10th. Please switch to Default (GPT 3.5) or GPT-4. |
 | GPT-4 | gpt-4 | 4095 | Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. |
 | Default (GPT-3.5) with browsing | - | - | - |
+| Web Browsing (GPT-4) | - | - |  Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. This version can also browse the internet. |
 | Code Interpreter | - | - | An experimental model that can use Python, and handles uploads and downloads |
 
 ### Models available via platform.openai.com
