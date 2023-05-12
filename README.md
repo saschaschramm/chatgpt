@@ -12,6 +12,7 @@
 
 #### GPT-4
 | Title | Slug | Max tokens | Description |
+| --- | --- | --- | --- |
 | Default | gpt-4 | 4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
 | Plugins (Beta) | gpt-4-plugins | 8195 | An experimental model that knows when and how to use plugins |
 | Browsing (Beta) | - | - |  Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. This version can also browse the internet. |
