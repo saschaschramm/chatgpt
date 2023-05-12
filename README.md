@@ -3,15 +3,19 @@
 
 ## Analysis
 ### Models available via chat.openai.com
-| Title | Slug | Max tokens | Description (from OpenAI) |
+
+#### GPT-3.5
+| Title | Slug | Max tokens | Description |
 | --- | --- | --- | --- |
-| Plugins | text-davinci-002-plugins | 8195 | An experimental model that knows when and how to use plugins |
-| Default (GPT-3.5) | text-davinci-002-render-sha | 4097 | Optimized for speed, currently available to Plus users <br><br> Note: The original description is outdated, as the model is now accessible to both Plus and non-Plus users. |
-| Legacy (GPT-3.5) [Deprecating Soon] | text-davinci-002-render-paid | 4097 | This is the previous Plus model. It will be deprecated on May 10th. Please switch to Default (GPT 3.5) or GPT-4. |
-| GPT-4 | gpt-4 | 4095 | Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. |
+| Default (GPT-3.5) | text-davinci-002-render-sha | 8191 | Our fastest model, great for most everyday tasks. |
 | Default (GPT-3.5) with browsing | - | - | - |
-| Web Browsing (GPT-4) | - | - |  Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. This version can also browse the internet. |
-| Code Interpreter | - | - | An experimental model that can use Python, and handles uploads and downloads |
+
+#### GPT-4
+| Title | Slug | Max tokens | Description |
+| Default | gpt-4 | 4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
+| Plugins (Beta) | gpt-4-plugins | 8195 | An experimental model that knows when and how to use plugins |
+| Browsing (Beta) | - | - |  Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. This version can also browse the internet. |
+| Code Interpreter (Alpha) | - | - | An experimental model that can use Python, and handles uploads and downloads |
 
 ### Models available via platform.openai.com
 | Model | Max tokens | Training data (pre-training) |
