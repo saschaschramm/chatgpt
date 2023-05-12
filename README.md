@@ -18,6 +18,8 @@
 | Browsing (Beta) | - | - |  Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. This version can also browse the internet. |
 | Code Interpreter (Alpha) | - | - | An experimental model that can use Python, and handles uploads and downloads |
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re rolling out web browsing and Plugins to all ChatGPT Plus users over the next week! Moving from alpha to beta, they allow ChatGPT to access the internet and to use 70+ third-party plugins. <a href="https://t.co/t4syFUj0fL">https://t.co/t4syFUj0fL</a> <a href="https://t.co/Mw9FMpKq91">pic.twitter.com/Mw9FMpKq91</a></p>&mdash; OpenAI (@OpenAI) <a href="https://twitter.com/OpenAI/status/1657128759659745280?ref_src=twsrc%5Etfw">May 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Models available via platform.openai.com
 | Model | Max tokens | Training data (pre-training) |
 | --- | --- | --- |
