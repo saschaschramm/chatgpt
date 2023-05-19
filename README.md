@@ -8,6 +8,7 @@
 | Title | Slug | Max tokens | Description |
 | --- | --- | --- | --- |
 | Default (GPT-3.5) | text-davinci-002-render-sha | 8191 | Our fastest model, great for most everyday tasks. |
+| Default (GPT-3.5) (Mobile) | text-davinci-002-render-sha-mobile | 8191 | Our fastest model, great for most everyday tasks. |
 | Default (GPT-3.5) with browsing | - | - | - |
 
 #### GPT-4
@@ -15,10 +16,10 @@
 | --- | --- | --- | --- |
 | Default | gpt-4 | 4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
 | Plugins (Beta) | gpt-4-plugins | 8195 | An experimental model that knows when and how to use plugins |
-| Browsing (Beta) | - | - |  Our most advanced model, available to Plus subscribers. GPT-4 excels at tasks that require advanced reasoning, complex instruction understanding, and more creativity. This version can also browse the internet. |
+| Browsing (Beta) | gpt-4-browsing | 4095 |  An experimental model that knows when and how to browse the internet |
 | Code Interpreter (Alpha) | - | - | An experimental model that can use Python, and handles uploads and downloads |
+| GPT-4 (Mobile, V2) | gpt-4-mobile | 4095 | Our most capable model, great for tasks that require creativity and advanced reasoning.|
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re rolling out web browsing and Plugins to all ChatGPT Plus users over the next week! Moving from alpha to beta, they allow ChatGPT to access the internet and to use 70+ third-party plugins. <a href="https://t.co/t4syFUj0fL">https://t.co/t4syFUj0fL</a> <a href="https://t.co/Mw9FMpKq91">pic.twitter.com/Mw9FMpKq91</a></p>&mdash; OpenAI (@OpenAI) <a href="https://twitter.com/OpenAI/status/1657128759659745280?ref_src=twsrc%5Etfw">May 12, 2023</a></blockquote>
 
 ### Models available via platform.openai.com
 | Model | Max tokens | Training data (pre-training) |
