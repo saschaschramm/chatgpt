@@ -102,10 +102,10 @@ The `gpt-4` model returns a different number of prompt tokens compared to `gpt-3
 ## Performance
 We have evaluated the ChatGPT model `gpt-4-0314` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `78.66%`.
 
-| Model name | Pass@1 | Date | Comment | Completions of evaluation run | Prompt
+| Model name | Pass@1 | Date | Comment | Completions of evaluation run | Results | Prompt
 | - | - | - | - | - | - |
-| gpt-4-0314 | 78.66% | 2023-03-17 | https://platform.openai.com/ | [2023-03-17-samples-gpt-4-0314.jsonl](2023-03-17-samples-gpt-4-0314.jsonl) | Complete the following code:\n{code}
-| gpt-3.5-turbo-0301 | 74.39% | 2023-04-24 | https://platform.openai.com/ | [2023-04-24-samples-gpt-3.5-turbo-0301.jsonl](2023-04-24-samples-gpt-3.5-turbo-0301.jsonl) | Complete the following code. Use ```python to put the Python code in markdown quotes:\n{code}
+| gpt-4-0314 | 78.66% | 2023-03-17 | https://platform.openai.com/ | [2023-03-17-samples-gpt-4-0314.jsonl](2023-03-17-samples-gpt-4-0314.jsonl) | [2023-03-17-samples-gpt-4-0314.jsonl_results.jsonl](2023-03-17-samples-gpt-4-0314.jsonl_results.jsonl) | Complete the following code:\n{code}
+| gpt-3.5-turbo-0301 | 74.39% | 2023-04-24 | https://platform.openai.com/ | [2023-04-24-samples-gpt-3.5-turbo-0301.jsonl_results.jsonl](2023-04-24-samples-gpt-3.5-turbo-0301.jsonl_results.jsonl) | Complete the following code. Use ```python to put the Python code in markdown quotes:\n{code}
 | text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [2023-02-19-samples-text-davinci-002-render-sha.jsonl](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
 | text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
 | cushman-ml | 56.10% | 2022-10-23 | Copilot
