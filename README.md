@@ -24,7 +24,7 @@
 ### Models available via platform.openai.com
 | Model | Max tokens | Training data (pre-training) |
 | --- | --- | --- |
-| gpt-4-0614 | 8192 | Up to Sep 2021
+| gpt-4-0613 | 8192 | Up to Sep 2021
 | gpt-4-32k-0613 | 32768 | Up to Sep 2021
 | gpt-3.5-turbo-0613 | 4096 | Up to Sep 2021
 | gpt-3.5-turbo-16k-0613 | 16384 | Up to Sep 2021
@@ -105,8 +105,6 @@ The `gpt-4` model returns a different number of prompt tokens compared to `gpt-3
 
 ## Performance
 We have evaluated the ChatGPT model `gpt-4-0613` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `86.59%`.
-
-
 | Model name | Pass@1 | Date | Comment | Results | Prompt
 | - | - | - | - | - | - | 
 | gpt-4-0613 | 86.59% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-4-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
