@@ -24,6 +24,10 @@
 ### Models available via platform.openai.com
 | Model | Max tokens | Training data (pre-training) |
 | --- | --- | --- |
+| gpt-4-0614 | 8192 | Up to Sep 2021
+| gpt-4-32k-0613 | 32768 | Up to Sep 2021
+| gpt-3.5-turbo-0613 | 4096 | Up to Sep 2021
+| gpt-3.5-turbo-16k-0613 | 16384 | Up to Sep 2021
 | gpt-4-0314 | 8192 | Up to Sep 2021
 | gpt-4-32k-0314 | 32768 | Up to Sep 2021
 | gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
@@ -100,13 +104,16 @@ The `gpt-4` model returns a different number of prompt tokens compared to `gpt-3
 > It's unclear why the model returns 11 prompt tokens instead of 12. Maybe there is no `\n` after the role `user`.
 
 ## Performance
-We have evaluated the ChatGPT model `gpt-4-0314` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `78.66%`.
+We have evaluated the ChatGPT model `gpt-4-0613` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `86.59%`.
 
-| Model name | Pass@1 | Date | Comment | Completions of evaluation run | Results | Prompt
-| - | - | - | - | - | - | - |
-| gpt-4-0314 | 78.66% | 2023-03-17 | https://platform.openai.com/ | [Link](2023-03-17-samples-gpt-4-0314.jsonl) | [Link](2023-03-17-samples-gpt-4-0314.jsonl_results.jsonl) | Complete the following code:\n{code}
-| gpt-3.5-turbo-0301 | 74.39% | 2023-04-24 | https://platform.openai.com/ | [Link](2023-04-24-samples-gpt-3.5-turbo-0301.jsonl) | [Link](2023-04-24-samples-gpt-3.5-turbo-0301.jsonl_results.jsonl) | Complete the following code. Use ```python to put the Python code in markdown quotes:\n{code}
-| text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  [Link](2023-02-19-samples-text-davinci-002-render-sha.jsonl)
+
+| Model name | Pass@1 | Date | Comment | Results | Prompt
+| - | - | - | - | - | - | 
+| gpt-4-0613 | 86.59% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-4-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
+| gpt-3.5-turbo-0613 | 71.34% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-3.5-turbo-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
+| gpt-4-0314 | 78.66% | 2023-03-17 | https://platform.openai.com/ | [Link](2023-03-17-samples-gpt-4-0314.jsonl_results.jsonl) | Complete the following code:\n{code}
+| gpt-3.5-turbo-0301 | 74.39% | 2023-04-24 | https://platform.openai.com/ | [Link](2023-04-24-samples-gpt-3.5-turbo-0301.jsonl_results.jsonl) | Complete the following code. Use ```python to put the Python code in markdown quotes:\n{code}
+| text-davinci-002-render-sha | 70.12% | 2023-02-19 | https://chat.openai.com/ |  
 | text-davinci-002-render | 56.10% | 2022-12-03 | https://chat.openai.com/ |
 | cushman-ml | 56.10% | 2022-10-23 | Copilot
 | code-davinci-002 | 46.95% | 2022-10-23 | https://platform.openai.com/
