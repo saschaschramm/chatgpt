@@ -32,38 +32,19 @@
 | gpt-4-32k-0314 | 32768 | Up to Sep 2021
 | gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
 
+### Completion
+If we send the message `[{"role": "user", "content": "13+37="}]` to the model, it returns the following chat completion response:
+| Model | Completion |
+| - | - |
+| gpt-3.5-turbo-0613 | [Link](completions/gpt-3.5-turbo-0613.json) |
+| gpt-4-0613 | [Link](completions/gpt-4-0613.json) |
+
 ### Vocabulary
 The ChatGPT models employ a distinct vocabulary compared to their predecessors. The models use a `cl100k_base` vocabulary with `100,000` tokens, where each token encodes an average of `3.7` characters in English. For a detailed analysis, see [vocab.ipynb](vocab.ipynb). 
 
 Additionally, these models employ the [Chat Markup Language](https://github.com/openai/openai-python/blob/main/chatml.md).
 
-### gpt-3.5-turbo
-If we send the message `[{"role": "user", "content": "13+37="}]` to the model, we get the following chat completion response:
-
-```json
-{
-  "choices": [
-    {
-      "finish_reason": "stop",
-      "index": 0,
-      "message": {
-        "content": "50",
-        "role": "assistant"
-      }
-    }
-  ],
-  "created": 123,
-  "id": "chatcmpl-XXX",
-  "model": "gpt-3.5-turbo-0301",
-  "object": "chat.completion",
-  "usage": {
-    "completion_tokens": 1,
-    "prompt_tokens": 12,
-    "total_tokens": 13
-  }
-}
-```
-
+### Tokenizer
 The number of prompt tokens and completion tokens are computed as follows (see [OpenAI-Cookbook](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb) for details):
 ```python
 prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant',  '<|message|>']
@@ -73,32 +54,6 @@ prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>
 ```python
 completion_tokens = ['50']
 # len(tokens) is 1
-```
-
-### gpt-4
-The `gpt-4` model returns a different number of prompt tokens compared to `gpt-3.5-turbo`. If we send the message `[{"role": "user", "content": "13+37="}]` to the model, it returns the following chat completion response:
-```json
-{
-  "choices": [
-    {
-      "finish_reason": "stop",
-      "index": 0,
-      "message": {
-        "content": "50",
-        "role": "assistant"
-      }
-    }
-  ],
-  "created": 123,
-  "id": "chatcmpl-XXX",
-  "model": "gpt-4-0314",
-  "object": "chat.completion",
-  "usage": {
-    "completion_tokens": 1,
-    "prompt_tokens": 11,
-    "total_tokens": 12
-  }
-}
 ```
 
 > It's unclear why the model returns 11 prompt tokens instead of 12. Maybe there is no `\n` after the role `user`.
