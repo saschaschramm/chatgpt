@@ -5,20 +5,20 @@
 ### Models available via chat.openai.com
 
 #### GPT-3.5
-| Title | Slug | Max tokens | Description |
-| --- | --- | --- | --- |
-| Default (GPT-3.5) | text-davinci-002-render-sha | 8191 | Our fastest model, great for most everyday tasks. |
-| Default (GPT-3.5) (Mobile) | text-davinci-002-render-sha-mobile | 8191 | Our fastest model, great for most everyday tasks. |
-| Default (GPT-3.5) with browsing | - | - | - |
+|    | title                      | slug                                         |   max_tokens | description                                       |
+|---:|:---------------------------|:---------------------------------------------|-------------:|:--------------------------------------------------|
+|  0 | Default (GPT-3.5)          | text-davinci-002-render-sha                  |         8191 | Our fastest model, great for most everyday tasks. |
+|  3 | Default (GPT-3.5) (Mobile) | text-davinci-002-render-sha-mobile           |         8191 | Our fastest model, great for most everyday tasks. |
+|  2 | Code Interpreter           | text-davinci-002-render-sha-code-interpreter |          nan | nan                                               |
+|  4 | Plugins                    | text-davinci-002-render-sha-plugin           |          nan | nan                                               |
 
 #### GPT-4
-| Title | Slug | Max tokens | Description |
-| --- | --- | --- | --- |
-| Default | gpt-4 | 4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
-| Plugins (Beta) | gpt-4-plugins | 8195 | An experimental model that knows when and how to use plugins |
-| Browsing (Beta) | gpt-4-browsing | 4095 |  An experimental model that knows when and how to browse the internet |
-| Code Interpreter (Alpha) | - | - | An experimental model that can use Python, and handles uploads and downloads |
-| GPT-4 (Mobile, V2) | gpt-4-mobile | 4095 | Our most capable model, great for tasks that require creativity and advanced reasoning.|
+ |    | title              | slug                   |   max_tokens | description                                                                             |
+|---:|:-------------------|:-----------------------|-------------:|:----------------------------------------------------------------------------------------|
+|  1 | GPT-4              | gpt-4                  |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
+|  2 | Plugins            | gpt-4-plugins          |         8192 | An experimental model that knows when and how to use plugins                            |
+|  4 | GPT-4 (Mobile, V2) | gpt-4-mobile           |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
+|  3 | Code Interpreter   | gpt-4-code-interpreter |          nan | nan                                                                                     |
 
 
 ### Models available via platform.openai.com
