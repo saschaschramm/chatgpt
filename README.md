@@ -5,21 +5,20 @@
 ### Models available via chat.openai.com
 
 #### GPT-3.5
-|    | title                      | slug                                         |   max_tokens | description                                       |
-|---:|:---------------------------|:---------------------------------------------|-------------:|:--------------------------------------------------|
-|  0 | Default (GPT-3.5)          | text-davinci-002-render-sha                  |         8191 | Our fastest model, great for most everyday tasks. |
-|  3 | Default (GPT-3.5) (Mobile) | text-davinci-002-render-sha-mobile           |         8191 | Our fastest model, great for most everyday tasks. |
-|  2 | Code Interpreter           | text-davinci-002-render-sha-code-interpreter |          nan | nan                                               |
-|  4 | Plugins                    | text-davinci-002-render-sha-plugin           |          nan | nan                                               |
+| title                      | slug                                         |   max_tokens | description                                       |
+|:---------------------------|:---------------------------------------------|-------------:|:--------------------------------------------------|
+| Default (GPT-3.5)          | text-davinci-002-render-sha                  |         8191 | Our fastest model, great for most everyday tasks. |
+| Default (GPT-3.5) (Mobile) | text-davinci-002-render-sha-mobile           |         8191 | Our fastest model, great for most everyday tasks. |
+| Code Interpreter           | text-davinci-002-render-sha-code-interpreter |          nan | nan                                               |
+| Plugins                    | text-davinci-002-render-sha-plugin           |          nan | nan                                               |
 
 #### GPT-4
- |    | title              | slug                   |   max_tokens | description                                                                             |
-|---:|:-------------------|:-----------------------|-------------:|:----------------------------------------------------------------------------------------|
-|  1 | GPT-4              | gpt-4                  |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
-|  2 | Plugins            | gpt-4-plugins          |         8192 | An experimental model that knows when and how to use plugins                            |
-|  4 | GPT-4 (Mobile, V2) | gpt-4-mobile           |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
-|  3 | Code Interpreter   | gpt-4-code-interpreter |          nan | nan                                                                                     |
-
+| title              | slug                   |   max_tokens | description                                                                             |
+|:-------------------|:-----------------------|-------------:|:----------------------------------------------------------------------------------------|
+| GPT-4              | gpt-4                  |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
+| Plugins            | gpt-4-plugins          |         8192 | An experimental model that knows when and how to use plugins                            |
+| GPT-4 (Mobile, V2) | gpt-4-mobile           |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
+| Code Interpreter   | gpt-4-code-interpreter |          nan | nan                                                                                     |
 
 ### Models available via platform.openai.com
 | Model | Max tokens | Training data (pre-training) |
