@@ -46,16 +46,14 @@ Additionally, these models employ the [Chat Markup Language](https://github.com/
 ### Tokenizer
 The number of prompt tokens and completion tokens are computed as follows (see [OpenAI-Cookbook](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb) for details):
 ```python
-prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '\n', '<|im_start|>', 'assistant',  '<|message|>']
-# len(tokens) is 12
+prompt_tokens = ['<|im_start|>', 'user', '\n', '13', '+', '37', '=', '<|im_end|>', '<|im_start|>', 'assistant', '<|message|>']
+# len(tokens) is 11
 ```
 
 ```python
 completion_tokens = ['50']
 # len(tokens) is 1
 ```
-
-> It's unclear why the model returns 11 prompt tokens instead of 12. Maybe there is no `\n` after the role `user`.
 
 ## Performance
 We have evaluated the ChatGPT model `gpt-4-0613` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `86.59%`.
