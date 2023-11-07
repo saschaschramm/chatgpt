@@ -1,41 +1,11 @@
 # ChatGPT
 [ChatGPT](https://chat.openai.com/) is a text-based AI assistant by OpenAI. This is an analysis of ChatGPT.
 
-## Analysis
-### Models available via chat.openai.com
-
-#### GPT-3.5
-| title                      | slug                                         |   max_tokens | description                                       |
-|:---------------------------|:---------------------------------------------|-------------:|:--------------------------------------------------|
-| Default (GPT-3.5)          | text-davinci-002-render-sha                  |         8191 | Our fastest model, great for most everyday tasks. |
-| Default (GPT-3.5) (Mobile) | text-davinci-002-render-sha-mobile           |         8191 | Our fastest model, great for most everyday tasks. |
-| Code Interpreter           | text-davinci-002-render-sha-code-interpreter |          nan | nan                                               |
-| Plugins                    | text-davinci-002-render-sha-plugin           |          nan | nan                                               |
-
-#### GPT-4
-| title              | slug                   |   max_tokens | description                                                                             |
-|:-------------------|:-----------------------|-------------:|:----------------------------------------------------------------------------------------|
-| GPT-4              | gpt-4                  |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
-| Plugins            | gpt-4-plugins          |         8192 | An experimental model that knows when and how to use plugins                            |
-| GPT-4 (Mobile, V2) | gpt-4-mobile           |         4095 | Our most capable model, great for tasks that require creativity and advanced reasoning. |
-| Code Interpreter   | gpt-4-code-interpreter |          nan | nan                                                                                     |
-
-### Models available via platform.openai.com
-| Model | Max tokens | Training data (pre-training) |
-| --- | --- | --- |
-| gpt-4-0613 | 8192 | Up to Sep 2021
-| gpt-4-32k-0613 | 32768 | Up to Sep 2021
-| gpt-3.5-turbo-0613 | 4096 | Up to Sep 2021
-| gpt-3.5-turbo-16k-0613 | 16384 | Up to Sep 2021
-| gpt-4-0314 | 8192 | Up to Sep 2021
-| gpt-4-32k-0314 | 32768 | Up to Sep 2021
-| gpt-3.5-turbo-0301 | 4096 | Up to Sep 2021
-
 ### Completion
 If we send the message `[{"role": "user", "content": "13+37="}]` to the model, it returns the following chat completion response:
 | Model | Completion |
 | - | - |
-| gpt-3.5-turbo-0613 | [Link](completions/gpt-3.5-turbo-0613.json) |
+| gpt-3.5-turbo-1106 | [Link](completions/gpt-3.5-turbo-1106.json) |
 | gpt-4-0613 | [Link](completions/gpt-4-0613.json) |
 
 ### Vocabulary
@@ -56,9 +26,10 @@ completion_tokens = ['50']
 ```
 
 ## Performance
-We have evaluated the ChatGPT model `gpt-4-0613` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `86.59%`.
+We have evaluated the ChatGPT model `gpt-3.5-turbo-1106` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `71.95%`.
 | Model name | Pass@1 | Date | Comment | Results | Prompt
 | - | - | - | - | - | - | 
+| gpt-3.5-turbo-1106 | 71.95% | 2023-11-07 | https://platform.openai.com/ | [Link](2023-11-07-samples-gpt-3.5-turbo-1106.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code, including the necessary imports, in markdown quotes:\n{code}
 | gpt-4-0613 | 86.59% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-4-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
 | gpt-3.5-turbo-0613 | 71.34% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-3.5-turbo-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
 | gpt-4-0314 | 78.66% | 2023-03-17 | https://platform.openai.com/ | [Link](2023-03-17-samples-gpt-4-0314.jsonl_results.jsonl) | Complete the following code:\n{code}
