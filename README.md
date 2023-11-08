@@ -26,9 +26,10 @@ completion_tokens = ['50']
 ```
 
 ## Performance
-We have evaluated the ChatGPT model `gpt-3.5-turbo-1106` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `71.95%`.
+We have evaluated the ChatGPT model `gpt-4-turbo-1106-preview` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `87.20%`.
 | Model name | Pass@1 | Date | Comment | Results | Prompt
-| - | - | - | - | - | - | 
+| - | - | - | - | - | - |
+| gpt-4-turbo-1106-preview | 87.20% | 2023-11-08 | https://platform.openai.com/ | [Link](2023-11-08-samples-gpt-4-1106-preview.jsonl) | Complete the following code. Use ```python to put the completed Python code, including the necessary imports, in markdown quotes:\n{code}
 | gpt-3.5-turbo-1106 | 71.95% | 2023-11-07 | https://platform.openai.com/ | [Link](2023-11-07-samples-gpt-3.5-turbo-1106.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code, including the necessary imports, in markdown quotes:\n{code}
 | gpt-4-0613 | 86.59% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-4-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
 | gpt-3.5-turbo-0613 | 71.34% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-3.5-turbo-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}
