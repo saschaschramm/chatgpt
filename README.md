@@ -6,7 +6,7 @@ If we send the message `[{"role": "user", "content": "13+37="}]` to the model, i
 | Model | Completion |
 | - | - |
 | gpt-3.5-turbo-1106 | [Link](completions/gpt-3.5-turbo-1106.json) |
-| gpt-4-0613 | [Link](completions/gpt-4-0613.json) |
+| gpt-4-1106-preview | [Link](completions/gpt-4-1106-preview.json) |
 
 ### Vocabulary
 The ChatGPT models employ a distinct vocabulary compared to their predecessors. The models use a `cl100k_base` vocabulary with `100,000` tokens, where each token encodes an average of `3.7` characters in English. For a detailed analysis, see [vocab.ipynb](vocab.ipynb). 
