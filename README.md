@@ -6,7 +6,7 @@ If we send the message `[{"role": "user", "content": "13+37="}]` to the model, i
 | Model | Completion |
 | - | - |
 | gpt-3.5-turbo-1106 | [Link](completions/gpt-3.5-turbo-1106.json) |
-| gpt-4-1106-preview | [Link](completions/gpt-4-1106-preview.json) |
+| gpt-4-0125-preview | [Link](completions/gpt-4-0125-preview.json) |
 
 ### Vocabulary
 The ChatGPT models employ a distinct vocabulary compared to their predecessors. The models use a `cl100k_base` vocabulary with `100,000` tokens, where each token encodes an average of `3.7` characters in English. For a detailed analysis, see [vocab.ipynb](vocab.ipynb). 
@@ -26,9 +26,10 @@ completion_tokens = ['50']
 ```
 
 ## Performance
-We have evaluated the ChatGPT model `gpt-4-turbo-1106-preview` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `87.20%`.
+We have evaluated the ChatGPT model `gpt-4-0125-preview` with the [HumanEval](https://github.com/openai/human-eval) dataset. Out of 164 programming problems, the model can solve `83.54%`.
 | Model name | Pass@1 | Date | Comment | Results | Prompt
 | - | - | - | - | - | - |
+| gpt-4-0125-preview | 83.54% | 2024-01-27 | https://platform.openai.com/ | [Link](2024-01-27-samples-gpt-4-0125-preview.jsonl) | Complete the following code. Use ```python to put the completed Python code, including the necessary imports, in markdown quotes:\n{code}
 | gpt-4-1106-preview | 87.20% | 2023-11-08 | https://platform.openai.com/ | [Link](2023-11-08-samples-gpt-4-1106-preview.jsonl) | Complete the following code. Use ```python to put the completed Python code, including the necessary imports, in markdown quotes:\n{code}
 | gpt-3.5-turbo-1106 | 71.95% | 2023-11-07 | https://platform.openai.com/ | [Link](2023-11-07-samples-gpt-3.5-turbo-1106.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code, including the necessary imports, in markdown quotes:\n{code}
 | gpt-4-0613 | 86.59% | 2023-06-13 | https://platform.openai.com/ | [Link](2023-06-13-samples-gpt-4-0613.jsonl_results.jsonl) | Complete the following code. Use ```python to put the completed Python code in markdown quotes:\n{code}

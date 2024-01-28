@@ -1,0 +1,23 @@
+{
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "13 + 37 = 50",
+                "role": "assistant"
+            }
+        }
+    ],
+    "created": 1706460942,
+    "id": "chatcmpl-8m2jWccoalDfP7f4j2vYtKd7Gn3AQ",
+    "model": "gpt-4-0125-preview",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_156aa2d12a",
+    "usage": {
+        "completion_tokens": 7,
+        "prompt_tokens": 11,
+        "total_tokens": 18
+    }
+}
